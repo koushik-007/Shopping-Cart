@@ -118,19 +118,14 @@
          const currentNumber = parseFloat(current);
          const total = currentNumber + 1;
          document.getElementById(id).value = total;
-         
-         
-        
       }
       //item subtraction function
       function itemSubtract(id) {
          const current = document.getElementById(id).value;
          const currentNumber = parseFloat(current);
          const total = currentNumber - 1;
-         document.getElementById(id).value = total;
-
-        
-         
+         if (total>0) 
+         document.getElementById(id).value = total; 
       }
       //price of iphones
       function priceOfPhones(id) {
